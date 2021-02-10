@@ -2,8 +2,6 @@
 
 A simple image slideshow with a motion reveal effect and a fullscreen details view.
 
-![Motion Reveal Slideshow](https://tympanus.net/codrops/wp-content/uploads/2018/07/MotionRevealSlideshow_featured.jpg)
-
 [Article on Codrops](https://tympanus.net/codrops/?p=35450)
 
 [Demo](http://tympanus.net/Development/MotionRevealSlideshow/)
