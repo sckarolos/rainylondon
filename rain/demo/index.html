@@ -44,6 +44,7 @@
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">				
 				<h1 style="color: #fff; letter-spacing: 2px; font-family: 'Bebas Neue', sans-serif; font-size: 3rem;">test</h1>
+				<iframe src="test.mp3" allow="autoplay" id="audio"></iframe>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
@@ -61,16 +62,9 @@
 			</nav>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
-		<video autoplay loop muted>
-			<source src="test.mp3" />
-		</video>
 	</div>
 	<!-- /container -->
-	<script>
-		window.onload = function () {
-			document.querySelector("video").muted = false;
-		};
-	</script>
+
 	<script src="js/index.min.js"></script>
 </body>
 
