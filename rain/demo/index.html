@@ -13,6 +13,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -40,7 +43,8 @@
 			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">
-				<h1 style="color: #fff; font-size: 20px;">test</h1>
+				<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+				<h1 style="color: #fff; font-size: 40px; font-family: 'Rubik', sans-serif;">test</h1>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
@@ -60,7 +64,6 @@
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
 	</div>
 	<!-- /container -->
-	<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 	<audio autoplay loop>
 		<source src="test.mp4" type="audio/mp4">
 	  </audio>
