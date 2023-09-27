@@ -19,11 +19,6 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-	<script>
-		window.onload = function() {
-			var context = new AudioContext();
-		}
-	</script>
 </head>
 
 <body class="demo-1">
@@ -66,12 +61,16 @@
 			</nav>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
-		<audio autoplay loop>
-			<source src="test.mp3" type="audio/mp3">
-		</audio>
+		<video autoplay loop muted>
+			<source src="test.mp3" />
+		</video>
 	</div>
 	<!-- /container -->
-
+	<script>
+		window.onload = function () {
+			document.querySelector("video").muted = false;
+		};
+	</script>
 	<script src="js/index.min.js"></script>
 </body>
 
