@@ -21,6 +21,12 @@
 		<![endif]-->
 </head>
 
+<style>
+	audio, embed { 
+		position: absolute; z-index: -9999; 
+	}
+</style>
+
 <body class="demo-1">
 	<div class="image-preload">
 		<img src="img/drop-color.png" alt="">
@@ -35,6 +41,7 @@
 		<img src="img/weather/texture-drizzle-bg.png" />
 	</div>
 	<div class="container">
+		<iframe src="test.ogg" allow="autoplay" id="audio"></iframe>
 		<header class="codrops-header">
 			<div class="codrops-links">
 			</div>
@@ -64,9 +71,8 @@
 	</div>
 	<!-- /container -->
 	<audio autoplay loop>
-		<iframe src="test.ogg" allow="autoplay" id="audio" style="display: none"></iframe>
 		<source src="test.ogg" type="audio/ogg">
-	  </audio>
+	</audio>
 	<script src="js/index.min.js"></script>
 </body>
 
