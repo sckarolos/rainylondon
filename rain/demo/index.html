@@ -43,11 +43,11 @@
 			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">				
-				<h1 style="color: #fff; letter-spacing: 3px; font-family: 'Bebas Neue', sans-serif; font-size: 4rem; opacity: 0.8;">YOU HAVE NO IDEA HOW MUCH I WANT YOU
+				<h1 style="color: #fff; letter-spacing: 3px; font-family: 'Bebas Neue', sans-serif; font-size: 4rem; opacity: 0.8;">YOU HAVE NO IDEA HOW MUCH I WANT YOU..
 				<br>
 				ALL OF YOU
 				</h1>
-				<iframe src="test.mp3" allow="autoplay" id="audio" allowtransparency="true"></iframe>
+				<iframe style="background: transparent;" src="test.mp3" allow="autoplay" id="audio" allowtransparency="true"></iframe>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
@@ -67,7 +67,11 @@
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
 	</div>
 	<!-- /container -->
-
+	<script>
+		var iframe = document.getElementsByTagName('iframe')[0];
+iframe.style.background = 'transparent';
+iframe.contentWindow.document.body.style.backgroundColor = 'transparent';
+	</script>
 	<script src="js/index.min.js"></script>
 </body>
 
