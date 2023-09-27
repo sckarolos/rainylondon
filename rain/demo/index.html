@@ -35,7 +35,6 @@
 		<img src="img/weather/texture-drizzle-bg.png" />
 	</div>
 	<div class="container">
-		<iframe src="test.mp3" allow="autoplay" id="audio" style="audio, embed { position: absolute; z-index: -9999; }"></iframe>
 		<header class="codrops-header">
 			<div class="codrops-links">
 			</div>
@@ -45,6 +44,7 @@
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">				
 				<h1 style="color: #fff; font-family: 'Bebas Neue', sans-serif;">test</h1>
+				<iframe src="test.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
@@ -62,11 +62,12 @@
 			</nav>
 		</div>
 		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
+		<audio autoplay loop>
+			<source src="test.mp3" type="audio/mp3">
+		</audio>
 	</div>
 	<!-- /container -->
-	<audio autoplay loop>
-		<source src="test.mp3" type="audio/mp3">
-	</audio>
+
 	<script src="js/index.min.js"></script>
 </body>
 
