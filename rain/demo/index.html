@@ -19,6 +19,11 @@
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+	<script>
+		window.onload = function() {
+			var context = new AudioContext();
+		}
+	</script>
 </head>
 
 <body class="demo-1">
@@ -44,7 +49,6 @@
 			<!-- Heavy Rain -->
 			<div class="slide" id="slide-1" data-weather="rain">				
 				<h1 style="color: #fff; letter-spacing: 2px; font-family: 'Bebas Neue', sans-serif; font-size: 3rem;">test</h1>
-				<iframe src="silence.mp3" allow="autoplay" id="audio"></iframe>
 			</div>
 			<!-- Drizzle -->
 			<div class="slide" id="slide-2" data-weather="drizzle">
